@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Review Required PR",
+  "description": "GitHub でレビュー必須の PR の背景色を変える",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
